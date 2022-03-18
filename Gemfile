@@ -84,3 +84,5 @@ gem "sass-rails", "~> 6.0"
 gem "gravatar_image_tag", "~> 1.2"
 
 gem "devise", "~> 4.8"
+
+gem "cssbundling-rails", "~> 1.1"
