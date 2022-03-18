@@ -82,3 +82,5 @@ gem "simple_form", "~> 5.1"
 gem "sass-rails", "~> 6.0"
 
 gem "gravatar_image_tag", "~> 1.2"
+
+gem "devise", "~> 4.8"
