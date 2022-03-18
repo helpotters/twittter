@@ -80,3 +80,5 @@ gem "bulma-rails", "~> 0.9.3"
 gem "simple_form", "~> 5.1"
 
 gem "sass-rails", "~> 6.0"
+
+gem "gravatar_image_tag", "~> 1.2"
