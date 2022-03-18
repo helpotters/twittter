@@ -76,3 +76,5 @@ gem "guard", "~> 2.18"
 gem "guard-livereload", "~> 2.5"
 
 gem "bulma-rails", "~> 0.9.3"
+
+gem "simple_form", "~> 5.1"
