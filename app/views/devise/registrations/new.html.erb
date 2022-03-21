@@ -19,6 +19,29 @@
                   </div>
                </div>
 
+
+               <div class="field">
+                  <div class="control">
+                     <%= f.input :name,
+                        required: true,
+                        input_html: {class:"input"},
+                        label_html: {class:"label"},
+                        wrapper: false,
+                        input_html: { autocomplete: "name" }%>
+                  </div>
+               </div>
+
+               <div class="field">
+                  <div class="control">
+                     <%= f.input :username,
+                        required: true,
+                        input_html: {class:"input"},
+                        label_html: {class:"label"},
+                        wrapper: false,
+                        input_html: { autocomplete: "username" }%>
+                  </div>
+               </div>
+
                <div class="field">
                   <div class="control">
                      <%= f.input :password,
