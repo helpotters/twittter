@@ -1,7 +1,10 @@
-<div id="<%= dom_id tweet %>">
-  <p>
-    <strong>Tweet:</strong>
-    <%= tweet.tweet %>
-  </p>
-
-</div>
+<%= simple_form_for(@tweet) do |f| %>
+  <%= f.error_notification %>
+  <div class="field">
+    <div class="control">
+      <%= f.input :tweet, input_html: { class: "textarea"}, wrapper: false, label_html: {class: "label"}, placeholder: "Compose a new tweet...", autofocus: true %>
+    </div>
+  </div>
+  <%= f.button :submit, class: "button is-info is-small is-left"%>
+  <%= link_to "Back to tweets", tweets_path, class:"button is-small is-info"%>
+<% end %>

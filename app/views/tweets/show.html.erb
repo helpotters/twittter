@@ -1,10 +1,10 @@
 <p style="color: green"><%= notice %></p>
-
-<%= render @tweet %>
-
-<div>
-  <%= link_to "Edit this tweet", edit_tweet_path(@tweet) %> |
-  <%= link_to "Back to tweets", tweets_path %>
-
-  <%= button_to "Destroy this tweet", @tweet, method: :delete %>
-</div>
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <h1 class="title is-5">View</h1>
+      <%= render 'tweet' %>
+      <%= button_to "", @tweet, method: :delete, class:"button is-large is-danger delete"%>
+    </div>
+  </div>
+</section>

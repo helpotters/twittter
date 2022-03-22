@@ -1,10 +1,8 @@
-<h1>Editing tweet</h1>
-
-<%= render "form", tweet: @tweet %>
-
-<br>
-
-<div>
-  <%= link_to "Show this tweet", @tweet %> |
-  <%= link_to "Back to tweets", tweets_path %>
-</div>
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <h1 class="title is-5">Edit</h1>
+        <%= render 'tweet' %>
+        <%= button_to "", @tweet, method: :delete, class:"button is-large is-danger delete"%>
+    </div>
+</section>
