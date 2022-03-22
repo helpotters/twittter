@@ -19,30 +19,30 @@
           <h1 class="title is-5">Twitter</h1>
         <% end %>
       </div>
-      <div class="narbar-burger burger" data-target="navbarExample">
+      <div class="narbar-burger burger" data-target="usernav">
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      <div id="navbarExample" class="navbar-menu">
+      <div id="usernav" class="navbar-menu">
         <div class="navbar-end">
           <div class="field is-grouped">
-            <p class="control">
-              <%= link_to "New Tweet", root_path, class: "button is-info is-inverted" %>
-            </p>
             <% if user_signed_in? %>
-              <p class="control">
+              <p class="control navbar-item">
+                <%= link_to "New Tweet", root_path, class: "button is-info is-inverted" %>
+              </p>
+              <p class="control navbar-item">
                 <%= link_to current_user.name, edit_user_registration_path, class:"button is-info" %>
               </p>
-              <p>
+              <p class="navbar-item is-centered">
                 <%= button_to "Logout", destroy_user_session_path, method: :delete, class:"button is-info" %>
               </p>
             <% else %>
-              <p class="control">
+              <p class="control navbar-item">
                 <%= link_to "Sign up", new_user_registration_path, class: "button is-info" %>
               </p>
-              <p class="control">
+              <p class="control navbar-item">
                 <%= link_to "Sign in", new_user_session_path, class: "button is-info" %>
               </p>
             <% end %>
